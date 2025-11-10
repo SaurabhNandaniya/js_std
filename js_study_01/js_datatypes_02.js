@@ -8,7 +8,7 @@ let age = 21
 let name = "saurabh"
 let availability = true
 let onlyUndefine;
-
+ 
 // 2 to power 53 or we can use bigint
 //string ""
 // number 
