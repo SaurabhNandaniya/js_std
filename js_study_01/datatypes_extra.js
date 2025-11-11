@@ -38,3 +38,25 @@ const fistFunction = function() {
 // console.log(typeof fistFunction);
 
 console.log(fistFunction());
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//premetive (stack) here you get the copy of the thing
+/* in non premetive (heap) you get the refrence of the thing if you want to
+change you haver to done it in the original one */
+
+let youtube = "saurabh@123"
+
+let newYoutube = youtube
+newYoutube = "gaurang@1234"//her it changes the value cause it uoses copies
+console.log(youtube);
+console.log(newYoutube);
+
+let objOne = {
+    emai : "saurabh@google.com",
+    age : 13
+}
+let objTwo = objOne
+
+objTwo.emai = "gaurang@google.com"//while here it use refrence so it won't chnage 
+console.log(objOne.emai);
+console.log(objTwo.emai);
