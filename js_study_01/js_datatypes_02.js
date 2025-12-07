@@ -1,4 +1,4 @@
-"use strict"; // use all cose as a new java versio
+"use strict"; // use all code as a new java version
 //alert( 3 + 3) // we are using node js not a browser
 
 console.log( 3 + 3)
@@ -9,7 +9,7 @@ let name = "saurabh"
 let availability = true
 let onlyUndefine;
  
-// 2 to power 53 or we can use bigint
+// 2 to power 53 or we can use big int
 //string ""
 // number 
 // boolean
