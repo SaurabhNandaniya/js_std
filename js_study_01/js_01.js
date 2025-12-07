@@ -6,11 +6,10 @@ let stateOf
 let accountState =""//let cant be re declared and 
 // accountId = 4567 // we cant change the const value
 /*
-we simple onl use const and let var have issue with the scope like it changes all the
-variable with it 
+we simple onl use const and let var have issue with the block scope 
 */
 accountName = "hello"
 accountEmail = "@1332"
 accountCity = "loej"
 console.log(accountId);
-console.table([accountName, accountEmail, accountCity, stateOf, accountState])
+console.table([accountName, accountEmail, accountCity, stateOf, accountState])//ek hare badhu print thay
