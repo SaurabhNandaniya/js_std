@@ -1,4 +1,4 @@
-let age = "123" //null undefined 23abc true/false string=>NaN etc..
+let age = "566hello" //null undefined 23abc true/false string=>NaN etc..
 
 // console.log(typeof age);
 let valueInNumber = Number(age)
@@ -35,7 +35,7 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-console.log(2**3);
+// console.log(2**3);
 // console.log(2/3);
 // console.log(2%3);
 
@@ -58,7 +58,8 @@ let str3 = str1 + str2
 let num1, num2, num3
 
 num1 = num2 = num3 = 2 + 2
+// console.table([num1,num2,num3]);
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+// console.log(gameCounter);
