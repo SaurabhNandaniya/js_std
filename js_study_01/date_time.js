@@ -18,8 +18,8 @@ let timeStamp = Date.now()
 // console.log(Math.floor(Date.now()/1000));// this in second
 
 let newDate = new Date()
-console.log(newDate.getDate());
-console.log(newDate.getMonth() + 1);//months start with the 0
+// console.log(newDate.getDate());
+// console.log(newDate.getMonth() + 1);//months start with the 0
 // we can print sepearte dat month year and time with 
 // string interpolation with below
 // console.log(`the date is ${newDate.getDate()} and the month is ${newDate.getMonth()+1}.`);

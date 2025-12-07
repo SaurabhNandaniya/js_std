@@ -11,7 +11,7 @@ let emaiId;
 const id = Symbol("123")
 const anotheId = Symbol("123")
 
-console.log(id === anotheId)// symbol is unique weather it has same value in diff vari..
+// console.log(id === anotheId)// symbol is unique weather it has same value in diff vari..
 
 const bigNumber = 34567890987654345n //this n is for using the Bigint
 
@@ -28,8 +28,13 @@ let myObject = {
 }//this is object 
 
 const fistFunction = function() {
-    console.log("Hello World!");
+    // console.log("Hello World!");
     // return 0;
+}
+//this can also declare like this
+function fun1() {
+    // console.log("hii");
+    
 }
 // console.log(typeof anotheId);
 // console.log(typeof bigNumber);
@@ -37,12 +42,12 @@ const fistFunction = function() {
 // console.log(typeof myObject);
 // console.log(typeof fistFunction);
 
-console.log(fistFunction());
+// console.log(fistFunction());
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //premetive (stack) here you get the copy of the thing
 /* in non premetive (heap) you get the refrence of the thing if you want to
-change you haver to done it in the original one */
+change you have to done it in the original one */
 
 let youtube = "saurabh@123"
 
@@ -58,5 +63,5 @@ let objOne = {
 let objTwo = objOne
 
 objTwo.emai = "gaurang@google.com"//while here it use refrence so it won't chnage 
-console.log(objOne.emai);
-console.log(objTwo.emai);
+// console.log(objOne.emai);
+// console.log(objTwo.emai);
