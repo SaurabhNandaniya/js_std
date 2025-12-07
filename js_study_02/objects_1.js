@@ -18,6 +18,8 @@ const regularUser = {
 }
 
 // console.log(regularUser.fullname.userfullname.firstname);
+//jo aya vachhe thi full name hoy ke no hoy doubt hoy to tya teni pachhal ? laki sakay
+// like if else nakhi sakay hoy ke no hoy eno
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
