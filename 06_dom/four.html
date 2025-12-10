@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <h1 class="hi">
+
+    </h1>
+</body>
+<script>
+   function addLanf(langname) {
+        const addlan = document.createElement('li')
+        addlan.innerHTML = `${langname}`
+        document.querySelector('.language').appendChild(addlan)
+   }
+   addLanf("saurabj")//aam aakhu tree traverse karvu pade 6e
+   addLanf("python")// matlab aa optimze nathi bou
+
+   function addoptlang(laname){
+    //this is optimised way to add
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(laname))
+    document.querySelector('.hi').append(li)
+    document.querySelector('.language').append(li)
+   }
+
+   addoptlang("heyyy")
+   addoptlang("go")
+   addoptlang("new")
+
+//-----------  EDIT  -------------
+
+const editlan = document.querySelector('li:nth-child(2)')
+// editlan.innerHTML = 'navu add karu'
+const newel = document.createElement('li')
+newel.textContent = 'optimized way to edit'
+editlan.replaceWith(newel)
+
+// other ways to edit
+
+// const otherway = document.querySelector('li:nth-child(1)')
+const otherway = document.querySelector('li:first-child')
+otherway.outerHTML = '<li> typescript</li>'
+//-------- remove ---------
+const lastchild = document.querySelector('li:last-child')
+lastchild.remove()
+
+</script>
+</html>
