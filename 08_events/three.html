@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript buttonn daba ke rok lo </h1>
+    <h2>watch in console</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str, Date.now().toLocaleString());
+    }
+
+    document.getElementById('start').addEventListener('click', function(e){
+        const stopThis = setInterval(sayDate, 1000, "hi")
+        document.getElementById('stop').addEventListener('click', function(e){
+            clearInterval(stopThis) 
+        },false)
+    },false)
+</script>
+</html>
