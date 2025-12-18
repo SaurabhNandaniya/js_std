@@ -1,5 +1,5 @@
 // just paste this thing on hiteshcoudharis .js file for solutions and output
-
+//https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html
 let randomNumber = parseInt(Math.random() * 100 + 1);
 // console.log(randomNumber)
 

@@ -1,4 +1,5 @@
 // just paste this thing on hiteshcoudharis .js file for solutions and output
+//https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html
 const buttons = document.querySelectorAll('.button')
 console.log(buttons)
 const body = document.querySelector('body')
