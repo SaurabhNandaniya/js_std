@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Bind</title>
+</head>
+<body>
+    <button>Click me</button>
+</body>
+<script>
+    class react {
+        constructor() {
+            this.library = "React";
+            this.server = "http://localhost:3000";
+
+            document
+              .querySelector('button')
+              .addEventListener('click', this.handleClick.bind(this));
+            // aaya aapde bind(this) karyu kem ke handle click ma aapde this no reference aapva mate karyu 6e
+            //bind no kariye to niche this.server ma undefined aavse karan ke event listener ma this no reference button ne point kare 6e
+        }
+        handleClick(){
+            console.log(`button clicked`);
+            console.log(this);
+            console.log(this.server);
+        }
+    }
+    const react2 = new react();
+</script>
+</html>
