@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+
+    <script>
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function outer(){
+    //     let username = "hitesh"
+    //     // console.log("OUTER", secret);
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+    //         // console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+
+
+    function makeFunc() {
+        const name = "Mozilla";
+        // console.log(name);
+        
+        function displayName() {
+            console.log(name);
+            function hello(){
+                console.log("Hello World");
+            }
+            return hello;
+        }
+        return displayName;
+    }
+// aaya return vapru etle makefunc nikli jase execution context mathi ane khali return to displaynamej thay
+//6e etle displayname no scope eno parent scope je makefunc no scope 6e e thase
+// etle displayname ma name variable ni value aavi jase
+//ane lexical scope kevai 
+    const myFunc = makeFunc();// aaya bhale display name j return thaty 6e pn ena bhegu aakhu eno scope
+    // stahe aavse etle name variable ni value sathe aavs matlab ke memory share thay 6e
+    myFunc();
+   
+    // makeFunc()()();// aa try kara jevu 6e
+
+    </script>
+    <script>
+        // document.getElementById('orange').onclick = function(){
+        //     document.body.style.backgroundColor = 'orange';
+        // }
+        // document.getElementById('green').onclick = function(){
+        //     document.body.style.backgroundColor = 'green';
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+            // upara vada ni jem karie to direct color badli nej aavse aapde function return karie
+            // to button dabase pachhi badalse aaaya lexical scope no upyog thay 6e
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+    </script>
+</html>
