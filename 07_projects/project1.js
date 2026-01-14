@@ -38,3 +38,9 @@ buttons.forEach( (button) => {
 //     body.style.backgroundColor = e.target.id;
 //   })
 // })
+//newwwwwwwwwwwwwwww
+// document.addEventListener('click', (e) => {
+//   if (e.target.classList.contains('button')) {
+//     document.body.style.backgroundColor = e.target.id;
+//   }
+// });
